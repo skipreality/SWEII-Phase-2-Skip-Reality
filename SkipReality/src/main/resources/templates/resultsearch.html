@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>result of search</title>
+</head>
+<body bgcolor ="ffcccccf">
+<center><h1>result of search</h1></center>
+	<p th:if="${result}"
+	
+	th:inline="text"
+	><center><h1>  [[${result}]]</h1> </center>  </p>
+	
+	<p th:if="${list}"
+	
+	th:inline="text"
+	><center><h2> [[${list}]]</h2> </center>   </p>
+<center>	<form action = "/search3">
+      <input type  = "text"  name="game"  required="required"/>
+		<input type  = "submit" value = "search" />
+	</form>	</center>
+
+</body>
+</html>

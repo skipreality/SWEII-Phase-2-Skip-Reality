@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Calculator Application</title>
+</head>
+<body bgcolor ="ffcccccf">
+<center><pre>                                                        </pre></center>
+<center><pre>                                                        </pre></center>
+<center><pre>                                                        </pre></center>
+<center><pre>                                                        </pre></center>
+<center> <h1>my game (general information)</h1></center>
+<center><h2 >Do the man of war and peace is Mohamed Anower Elsadat?</h2></center>
+<center><form action = "/result">
+<center><p>enter your answer (true , false)</p></center>
+		<input type  = "text" name = "num1" />
+		<input type  = "submit" value = "Submit" />
+		
+</form></center>
+	<p th:if="${result}"
+	
+	th:inline="text"
+	><center> The result is [[${result}]] (this is result of previous input )</center>  </p>
+
+</body>
+</html>
